@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>tategase_Project</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="darkmode.css">
+        
+        <!-- JavaScript -->
+        <script src="myjs.js"></script>
+        <script src="darkmode.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <a href="#">
+                    <img src="https://cdn.icon-icons.com/icons2/3377/PNG/512/t_letter_icon_212312.png" alt="アイコン" class="header-icon">
+                </a>
+                <div class="header-title">立ヶ瀬の作業室</div>
+                <div class="header-controls">
+                    <div class="dark-mode-switch">
+                        <span class="dark-mode-text">モード切り替え</span>
+                        <label class="switch">
+                            <input type="checkbox" id="mode">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="../home/home.html">ホーム</a></li>
+                    <li><a href="#">最新記事</a></li>
+                    <li><a href="#">新着情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="../author/tategase.html">作者紹介</a></li>
+                    <li><a href="#">検索</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <p>このページは仮で作ったものです。上のメニューバーからページに飛べます。</p>
+        <p>ホームには今後の予定が書かれています。作者情報が今のメインですが、いずれこのページをメインにします。</p>
+        <p>以下の画像は自分が考えているページのデザインになります。画像横の「次に進む」及び「元に戻す」ボタンで画像を変更できます</p>
+        <h3>サイドバー仕様（「次に進む」を押すとサイドバーが左側に開いたような画像が出てきます。将来的にはこれを実装する予定です）</h3>
+        <img src="../image/roomart_1.jpg" id="ui" alt="UIのイメージ" class="ui-image" width="1000" >
+        <input type="button" value="次に進む" onclick="imagechange1();">
+        <input type="button" value="元に戻す" onclick="imagechange2();">
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/tategase" target="_blank" rel="noopener noreferrer" class="social-icon twitter-icon">作者のTwitter</a>
+            <!-- <a href=# class="social-icon line-icon">LINE</a> -->
+            <!-- 他のSNSアイコンも同様に追加 -->
+        </div>
+        <div class="footer-text">
+            <p>情報学特講 秋学期 期末プロジェクト zm20302 小久保篤希</p>
+        </div>
+    </footer>
+</body>
+</html>

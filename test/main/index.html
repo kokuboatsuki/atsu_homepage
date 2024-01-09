@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML, CSS and JavaScript demo</title>
+        <link rel="stylesheet" href="mystyle1.css">
+        <link rel="stylesheet" href="mystyle2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+
+        <!-- 自動閉じタグの機能 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closetag.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closebrackets.min.js"></script>
+
+        <!-- コード補完の機能 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/show-hint.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/html-hint.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/hint/show-hint.min.css">
+
+        <!-- その他の設定やテーマ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+
+        <!-- JavaScript -->
+        <script src="myjs.js"></script>
+        <script src="edit.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <a href="#">
+                    <img src="https://cdn.icon-icons.com/icons2/3377/PNG/512/t_letter_icon_212312.png" alt="アイコン" class="header-icon">
+                </a>
+                <div class="header-title">Web_Test</div>
+                <div class="header-controls">
+                    <div class="dark-mode-switch">
+                        <span class="dark-mode-text">モード切り替え</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li><a = href="home.html">ホーム</a></li>
+                    <li><a = href=#>最新記事</a></li>
+                    <li><a = href=#>新着情報</a></li>
+                    <li><a = href=#>お問い合わせ</a></li>
+                    <li><a = href="search.html">検索</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <h3>HTML demo 設定中</h3>
+        <textarea id="editor"></textarea>
+        <iframe id="preview"></iframe>
+    </main>
+</body>
+</html>

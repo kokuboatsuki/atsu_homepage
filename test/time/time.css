@@ -1,0 +1,52 @@
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.clock .hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 40%;
+  height: 2px;
+  background: black;
+  transform-origin: 0% 0%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.clock .hour-hand {
+  width: 30%;
+}
+.clock .minute-hand {
+  width: 35%;
+  background: grey;
+}
+.clock .second-hand {
+  width: 40%;
+  background: red;
+}
+.clock .number {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform-origin: center;
+}
+.clock .tick {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 5%;
+  background: black;
+  transform-origin: bottom;
+}
+.clock .tick-mark {
+  width: 2px;
+  height: 10%;
+}/*# sourceMappingURL=time.css.map */

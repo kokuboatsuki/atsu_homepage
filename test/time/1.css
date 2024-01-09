@@ -1,0 +1,17 @@
+.circle-button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.circle-button:hover {
+  background-color: #676767;
+}
+
+.circle-button:active {
+  transform: scale(0.95);
+  background-color: #4d4d4d;
+}/*# sourceMappingURL=1.css.map */

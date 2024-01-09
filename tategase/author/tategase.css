@@ -1,0 +1,199 @@
+/* 基本スタイル */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ヘッダースタイル */
+header {
+    width: 100vw;
+    /* 幅を100%に */
+    background-color: #f5f5f5;
+    /* 背景色を白に */
+    z-index: 10;
+    /* ヘッダーが最前面に来るように */
+    position: fixed;
+    justify-content: space-between;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 6em;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.header-link {
+    text-align: right;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+.header-link a {
+    color: black;
+    /* リンクの色を指定 */
+    text-decoration: none;
+    /* 下線を無くす */
+    z-index: 5;
+    /* プロフィール情報がヘッダー画像の上に来るように */
+}
+
+/* プロフィール情報テキストの位置調整 */
+.profile-info {
+    position: relative;
+    /* 絶対位置を指定して重ねる */
+    bottom: 0;
+    /* 親コンテナの下部に配置 */
+    left: 0;
+    /* 親コンテナの左側に配置 */
+    width: calc(100% - 30px);
+    /* 全体の幅から余白分を引く */
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+    text-align: left;
+    /* テキストは左揃え */
+    padding: 0 3%;
+    /* 余白を与える */
+    z-index: 10;
+    /* プロフィール画像より上に */
+    background: #fff;
+    /* 背景色を白に */
+    padding: 15px;
+    /* 内部の余白 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* 影をつける */
+}
+
+/* プロフィール画像のスタイル調整 */
+.profile-image {
+    width: min(25vw, 200px);
+    /* 計算 */
+    max-width: 200px;
+    /* コンテナの幅を超えない */
+    height: auto;
+    /* 画像の縦横比を維持 */
+    border-radius: 50%;
+    /* 丸い形状を維持 */
+    z-index: 5;
+    /* プロフィール画像が最前面に来るように */
+    border: 4px solid white;
+    transform: translateY(-95%);
+    /* 左に50%ずらして中央揃えに */
+    left: 50%;
+    /* 中央に来るように調整 */
+    top: 120px;
+    /* 画像が適切な位置に来るように調整 */
+    bottom: 0;
+    /* 親要素の下端からの位置 */
+    float: left;
+}
+
+.profile-text p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    background-size: cover;
+}
+
+/*.twitter-icon {
+    background-image: url('twitter-icon.png');
+}
+
+.line-icon {
+    background-image: url('line-icon.png');
+}*/
+
+/* プロフィールセクションのスタイリング */
+.profile-section {
+    position: relative;
+    /* 子要素の位置を制御するためにrelativeを設定 */
+}
+
+.profile-header {
+    /* ヘッダー画像のスタイル */
+    position: relative;
+    z-index: 3;
+    /* プロフィール画像の位置を制御するためにrelativeを設定 */
+}
+
+/* ヘッダー背景画像のスタイル調整 */
+.header-bg-image {
+    width: min(100vw, 100%);
+    /* 画像がコンテナの幅に合わせて伸縮する */
+    height: auto;
+    /* 高さが自動的に調整される */
+    display: block;
+    /* ブロックレベル要素として扱う */
+    z-index: 4;
+    /* ヘッダー画像が背面に来るように */
+    top: 0;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 1em 0;
+}
+
+/* トグルボタンのスタイル */
+.toggle-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+/* コンテンツは初期状態では非表示にする */
+.toggle-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* アニメーション効果 */
+    overflow-y: auto;
+    /* コンテンツが高さを超えた場合に縦スクロールを可能にする */
+}
+
+/* ネストされたリストのスタイル */
+ul {
+    list-style-type: none;
+    /* リストマーカーを非表示に */
+    padding: 0;
+    /* パディングをリセット */
+}
+
+/* ネストされたリストのトグルボタン */
+ul .toggle-button {
+    margin-left: 20px;
+    /* サブ項目のインデント */
+    font-size: 0.9em;
+    /* サブ項目のフォントサイズを少し小さく */
+}
+
+.mouse-image {
+    max-width: 100%;
+    /* コンテナの幅に合わせて画像サイズを調整 */
+    height: auto;
+    /* 画像の縦横比を維持 */
+}

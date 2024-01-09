@@ -1,0 +1,59 @@
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+    .hand {
+        position: absolute;
+        bottom: 50%; // 中央からスタート
+        left: 50%; // 左から50%の位置に設定
+        width: 40%; // 長さ調整
+        height: 2px; // 太さ調整
+        background: black;
+        transform-origin: 0% 0%; // 回転の基点を左端に設定
+        transform: translateX(-50%) rotate(90deg); // 中央から回転させる
+    }
+    
+    .hour-hand {
+        width: 30%; // 長さ調整
+    }
+    
+    .minute-hand {
+        width: 35%; // 長さ調整
+        background: grey;
+    }
+    
+    .second-hand {
+        width: 40%; // 長さ調整
+        background: red;
+    }
+    .number {
+        position: absolute;
+        bottom: 10%; // 数字の位置を調整
+        left: 50%;
+        transform-origin: center;
+        // 数字のスタイルを調整
+    }
+    .tick {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        height: 5%; // 目盛りの長さ
+        background: black;
+        transform-origin: bottom;
+    }
+    .tick-mark {
+        width: 2px; // 太い線
+        height: 10%; // 長い線
+    }
+
+    // 針のスタイル設定は変更なし
+}

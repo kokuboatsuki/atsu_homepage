@@ -1,0 +1,19 @@
+.circle-button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+        background-color: darken(grey, 10%);
+    }
+}
+.circle-button {
+    // 既存のスタイル...
+    &:active {
+        transform: scale(0.95);
+        background-color: darken(grey, 20%);
+    }
+}
